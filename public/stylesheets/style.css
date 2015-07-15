@@ -1,0 +1,103 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align:center;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.square {
+  padding: 5px;
+  height:100px;
+  width:100px;
+  box-sizing:border-box;
+  text-align:center;
+  display:inline-block;
+  overflow:hidden;
+  float:left;
+  cursor: pointer;
+  vertical-align: middle;
+  font-size: 500%
+}
+.squarex {
+  padding: 5px;
+  height:100px;
+  width:100px;
+  box-sizing:border-box;
+  text-align:center;
+  display:inline-block;
+  overflow:hidden;
+  float:left;
+  cursor: pointer;
+  vertical-align: middle;
+  font-size: 500%
+}
+.squareo {
+  padding: 5px;
+  height:100px;
+  width:100px;
+  box-sizing:border-box;
+  text-align:center;
+  display:inline-block;
+  overflow:hidden;
+  float:left;
+  cursor: pointer;
+  vertical-align: middle;
+  font-size: 500%
+}
+
+.square:hover {
+  background-color: yellow;
+  opacity: 0.2;
+  border: 2px dotted;
+}
+
+.row {
+  overflow:hidden;
+  box-sizing:border-box;
+  margin: 0 auto;
+}
+
+#all {
+  display: inline-block;
+  margin: 0 auto;
+  clear: both;
+}
+
+#s00 {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#s01 {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#s02 {
+  border-bottom: 1px solid black;
+}
+
+#s10 {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#s11 {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#s12 {
+  border-bottom: 1px solid black;
+}
+
+#s20 {
+  border-right: 1px solid black;
+}
+
+#s21 {
+  border-right: 1px solid black;
+}
