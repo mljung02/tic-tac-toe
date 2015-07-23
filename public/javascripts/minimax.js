@@ -12,6 +12,8 @@ var score = function (turn) {
   }
 }
 
+//create tree structure for moves, and then traverse recursively via minimax.
+
 var minimax = function (board) {
   var boardTemp = board
   var scores = [];
