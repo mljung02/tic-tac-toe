@@ -41,7 +41,7 @@ var checkHorizontal = function () {
 
 //create tree structure for moves, and then traverse recursively via minimax.
 
-var board = ["00","01","02","10","11","12","20","21","22"]
+var boardy = ["00","01","02","10","11","12","20","21","22"]
 var smallboard = ["a","b","c"]
 
 var mySpliceOne = function(array, index) {
@@ -51,6 +51,24 @@ var mySpliceOne = function(array, index) {
   }
   temp.splice(index,1);
   return temp;
+}
+var finished = function(board) {
+  var done = true;
+  for (var i = 0; i < board.length; i++) {
+    for (var j = 0; j < board.length; j++) {
+      if (board[i][j] === 0) {
+        done = false;
+      }
+    }
+  }
+  return done;
+}
+
+var checkWin = function () {
+  if (checkHorizontal() || checkVertical() || checkDiagonal()) {
+    return true
+  }
+  return false;
 }
 
 var build = function(moves, obj, depth, move) {
@@ -67,6 +85,16 @@ var build = function(moves, obj, depth, move) {
     }
   }
   return obj
+}
+
+var board = [[0,0,0],[0,0,0],[0,0,0]]
+
+//If the game is not finished
+
+var minimax = function (obj, board) {
+  if (!checkWin(board) || !finsihed(board)) {
+    score()
+  }
 }
 
 var moveset = build({}, smallboard)
