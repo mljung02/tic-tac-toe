@@ -98,9 +98,3 @@ var minimax = function (obj, board) {
 }
 
 var moveset = build({}, smallboard)
-
-// var minimax = function (board) {
-//   var boardTemp = board
-//   var scores = [];
-//   var moves = [];
-// }
